@@ -1,0 +1,42 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache
+.env
+.venv
+.DS_Store
+# 環境変数
+.env*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 仮想環境
+venv/
+ENV/
+AImentor_env/
+
+# テスト
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db 

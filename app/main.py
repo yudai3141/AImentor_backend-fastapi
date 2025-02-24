@@ -15,15 +15,16 @@ load_dotenv()
 
 MONGO_URL = os.getenv("MONGOURL")
 SECRET_KEY = os.getenv("SECRET_KEY", "your_secret_key")
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
+NODEJS_URL = os.getenv("NODEJS_URL", "http://localhost:5002")
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "https://ai-mentor-frontend.vercel.app",
-        "https://ai-mentor-nodejs-469976645741.asia-northeast1.run.app"
+        FRONTEND_URL,
+        NODEJS_URL
     ],
     allow_credentials=True,
     allow_methods=["*"],
